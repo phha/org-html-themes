@@ -294,7 +294,7 @@ function hsAddReviewPanels() {
     $('.outline-2').each(function(e) {
         var nbItems = $(this).find('span.todo').length;
         if (nbItems > 0) {
-            $(this).prepend('<div class="hsReviewPanel hsUnselectable" onclick="hsReviewTaskNext()">'
+            $(this).prepend('<div class="hsReviewPanel hsUnselectable dontprint" onclick="hsReviewTaskNext()">'
                             + 'Press r or click here<br>'
                             + 'to review ' + nbItems + ' tasks<br>'
                             + '(out of ' +  nbReviewTotalTasks + ' tasks)</div>');

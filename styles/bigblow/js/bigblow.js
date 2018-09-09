@@ -85,7 +85,7 @@ function tabifySections() {
         });
 
     // create the tab links
-    var tabs = $('<ul id="tabs"></ul>');
+    var tabs = $('<ul id="tabs" class="dontprint"></ul>');
     for (i = 0; i < allSections.length; i++) {
         var item = allSections[i];
         html = $('<li><a href="#' + item.id + '">' + item.text + '</a></li>');
@@ -334,13 +334,13 @@ $(function() {
         switch (t) {
             case 'NEW': return 1;
             case 'TODO': return 2;
-            case 'STRT': return 3;
-            case 'WAIT': return 4;
+            case 'NEXT': return 3;
+            case 'WAITING': return 4;
             case 'DLGT': return 5;
             case 'SDAY': return 6;
             case 'DFRD': return 7;
             case 'DONE': return 8;
-            case 'CANX': return 9;
+            case 'CANCELLED': return 9;
             default: return 0;
             }
     }

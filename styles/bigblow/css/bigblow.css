@@ -26,6 +26,10 @@ html, body {
     .dontprint {
         display: none;
     }
+
+    .validation {
+        display: none;
+    }
 }
 
 #preamble {
